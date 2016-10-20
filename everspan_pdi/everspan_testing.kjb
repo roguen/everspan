@@ -67,10 +67,10 @@
       <yloc>160</yloc>
       </entry>
     <entry>
-      <name>shine.sh</name>
+      <name>shineModified.sh</name>
       <description/>
       <type>SHELL</type>
-      <filename>&#x2f;Users&#x2f;rokeller&#x2f;Documents&#x2f;everspan&#x2f;shine&#x2f;shine.sh</filename>
+      <filename>&#x2f;Users&#x2f;rokeller&#x2f;IdeaProjects&#x2f;everspan&#x2f;out&#x2f;production&#x2f;everspan&#x2f;shineModified.sh</filename>
       <work_directory/>
       <arg_from_previous>N</arg_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -122,7 +122,7 @@
   <hops>
     <hop>
       <from>START</from>
-      <to>shine.sh</to>
+      <to>shineModified.sh</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
