@@ -1,0 +1,32 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="everspan:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/everspan_jar</output-path>
+    <root id="archive" name="everspan.jar">
+      <element id="module-output" name="everspan" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/commons-cli-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/annotations-3.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/auto-commons-external-1.0.128.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/auto-commons-external-1.0.132.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/aws-java-sdk-1.9.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/bcpg-jdk15on-1.47.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/bcpkix-jdk15on-1.47.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/bcprov-jdk15on-1.47.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/commons-codec-1.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/commons-io-2.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/commons-lang-2.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/commons-logging-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/gson-2.2.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/guava-18.0-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/hcp-sdk.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/hds-commons-1.0.109.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/httpclient-4.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/httpcore-4.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/jackson-annotations-2.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/jackson-core-2.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/jackson-databind-2.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/joda-time-2.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/json-20080701.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/everspan_pdi/shine/lib/shine.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
