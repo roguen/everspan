@@ -6,6 +6,7 @@
     <extended_description/>
     <trans_version/>
     <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
     <directory>&#x2f;</directory>
     <parameters>
     </parameters>
@@ -69,7 +70,7 @@
   <created_date>2016&#x2f;12&#x2f;12 15&#x3a;43&#x3a;07.098</created_date>
   <modified_user>-</modified_user>
   <modified_date>2016&#x2f;12&#x2f;12 15&#x3a;43&#x3a;07.098</modified_date>
-    <key_for_session_key/>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA&#x3d;</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -88,15 +89,15 @@
            <schema_name/>
            </partitioning>
     <dynamicCommandField>N</dynamicCommandField>
-    <command/>
+    <command>echo &#x22;&#x3c;namespace&#x3e;&#x3c;name&#x3e;shinetest&#x3c;&#x2f;name&#x3e;&#x3c;dpl&#x3e;2&#x3c;&#x2f;dpl&#x3e;&#x3c;hardQuota&#x3e;1 GB&#x3c;&#x2f;hardQuota&#x3e;&#x3c;softQuota&#x3e;85&#x3c;&#x2f;softQuota&#x3e;&#x3c;hashScheme&#x3e;SHA-256&#x3c;&#x2f;hashScheme&#x3e;&#x3c;enterpriseMode&#x3e;true&#x3c;&#x2f;enterpriseMode&#x3e;&#x3c;versioningSettings&#x3e;&#x3c;enabled&#x3e;false&#x3c;&#x2f;enabled&#x3e;&#x3c;&#x2f;versioningSettings&#x3e;&#x3c;&#x2f;namespace&#x3e;&#x22; &#x7c; curl -kv -H &#x22;Authorization&#x3a; HCP dGVuYW50MlVzZXI&#x3d;&#x3a;d2d30279a5b5ba0dbf79e6435411db49&#x22; -H &#x22;Content-Type&#x3a; application&#x2f;xml&#x22; &#x22;https&#x3a;&#x2f;&#x2f;tenant2.hcpsandbox.tie.local&#x3a;9090&#x2f;mapi&#x2f;tenants&#x2f;tenant2&#x2f;namespaces&#x22; -T -</command>
     <commandfieldname/>
     <port>22</port>
-    <servername>&#x24;&#x7b;tenant&#x7d;.&#x24;&#x7b;cluster&#x7d;</servername>
-    <userName/>
+    <servername>tenant2.hcpsandbox.tie.local</servername>
+    <userName>root</userName>
     <password>Encrypted </password>
     <usePrivateKey>Y</usePrivateKey>
-    <keyFileName/>
-    <passPhrase>Encrypted </passPhrase>
+    <keyFileName>&#x2f;Users&#x2f;rokeller&#x2f;Downloads&#x2f;HCP-7.0-Arizona&#x2f;7.0-root.pem</keyFileName>
+    <passPhrase>Encrypted 2be98afa61ed7a4828a2a8b7388c681cb</passPhrase>
     <stdOutFieldName>stdOut</stdOutFieldName>
     <stdErrFieldName>stdErr</stdErrFieldName>
     <timeOut>0</timeOut>
