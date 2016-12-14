@@ -1,0 +1,11 @@
+<namespace>
+   <name>shinetest</name>
+   <dpl>2</dpl>
+   <hardQuota>1 GB</hardQuota>
+   <softQuota>85</softQuota>
+   <hashScheme>SHA-256</hashScheme>
+   <enterpriseMode>true</enterpriseMode>
+   <versioningSettings>
+      <enabled>false</enabled>
+   </versioningSettings>
+</namespace>
