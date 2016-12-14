@@ -4,6 +4,7 @@
     <description/>
     <extended_description/>
     <job_version/>
+    <job_status>0</job_status>
   <directory>&#x2f;</directory>
   <created_user>-</created_user>
   <created_date>2016&#x2f;10&#x2f;19 16&#x3a;15&#x3a;10.673</created_date>
@@ -34,12 +35,110 @@
    <shared_objects_file/>
   <entries>
     <entry>
-      <name>Shine Transformation</name>
+      <name>shine.sh</name>
+      <description/>
+      <type>SHELL</type>
+      <filename>&#x2f;Users&#x2f;rokeller&#x2f;IdeaProjects&#x2f;everspan&#x2f;everspan_pdi&#x2f;shine&#x2f;shine.sh</filename>
+      <work_directory>&#x24;&#x7b;CONFIG_DIR&#x7d;</work_directory>
+      <arg_from_previous>N</arg_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>Y</set_logfile>
+      <logfile>shineoutput</logfile>
+      <set_append_logfile>N</set_append_logfile>
+      <logext>txt</logext>
+      <add_date>Y</add_date>
+      <add_time>Y</add_time>
+      <insertScript>N</insertScript>
+      <script/>
+      <loglevel>Detailed</loglevel>
+      <argument0>-c </argument0>
+      <argument1>&#x24;&#x7b;cluster&#x7d;</argument1>
+      <argument2>-t</argument2>
+      <argument3>&#x24;&#x7b;tenant&#x7d;</argument3>
+      <argument4>-n</argument4>
+      <argument5>&#x24;&#x7b;namespace&#x7d;</argument5>
+      <argument6>-u</argument6>
+      <argument7>&#x24;&#x7b;username&#x7d;</argument7>
+      <argument8>-p</argument8>
+      <argument9>&#x24;&#x7b;password&#x7d;</argument9>
+      <argument10>-k</argument10>
+      <argument11>&#x24;&#x7b;threads&#x7d;</argument11>
+      <argument12>-o PUT</argument12>
+      <argument13>&#x24;&#x7b;operation&#x7d;</argument13>
+      <argument14>-silentLogging</argument14>
+      <argument15>-d</argument15>
+      <argument16>&#x24;&#x7b;directoryCount&#x7d;</argument16>
+      <argument17>&#x24;&#x7b;directoryDepth&#x7d;</argument17>
+      <argument18>&#x24;&#x7b;directoryWidth&#x7d;</argument18>
+      <argument19>-f</argument19>
+      <argument20>&#x24;&#x7b;fileSize&#x7d;</argument20>
+      <argument21>&#x24;&#x7b;filenameLength&#x7d;</argument21>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>352</xloc>
+      <yloc>160</yloc>
+      </entry>
+    <entry>
+      <name>START</name>
+      <description/>
+      <type>SPECIAL</type>
+      <start>Y</start>
+      <dummy>N</dummy>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>80</xloc>
+      <yloc>160</yloc>
+      </entry>
+    <entry>
+      <name>Shine Execution Cleanup</name>
       <description/>
       <type>TRANS</type>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;ShineTransformation.ktr</filename>
+      <filename>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;file_cleanup.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile>&#x2f;Users&#x2f;rokeller&#x2f;Downloads&#x2f;hcp_anywhere_report_transformations 3 copy&#x2f;&#x3a;Users&#x3a;rokeller&#x3a;Downloads&#x3a;hcp_anywhere_report_transformations 3 copy&#x3a;execution</logfile>
+      <logext>txt</logext>
+      <add_date>Y</add_date>
+      <add_time>Y</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>496</xloc>
+      <yloc>160</yloc>
+      </entry>
+    <entry>
+      <name>JVM Garbage Collection Check Status</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;jvm_gc_status.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -63,74 +162,173 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>304</xloc>
+      <xloc>880</xloc>
       <yloc>160</yloc>
       </entry>
     <entry>
-      <name>shineModified.sh</name>
+      <name>Wait for JVM GC Completion</name>
       <description/>
-      <type>SHELL</type>
-      <filename>&#x2f;Users&#x2f;rokeller&#x2f;IdeaProjects&#x2f;everspan&#x2f;out&#x2f;production&#x2f;everspan&#x2f;shineModified.sh</filename>
-      <work_directory/>
+      <type>DELAY</type>
+      <maximumTimeout>30</maximumTimeout>
+      <scaletime>0</scaletime>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>672</xloc>
+      <yloc>160</yloc>
+      </entry>
+    <entry>
+      <name>Set Enviroment Variables</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;set_variables.ktr</filename>
+      <transname/>
       <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
       <set_logfile>N</set_logfile>
       <logfile/>
-      <set_append_logfile>N</set_append_logfile>
       <logext/>
       <add_date>N</add_date>
       <add_time>N</add_time>
-      <insertScript>N</insertScript>
-      <script/>
       <loglevel>Basic</loglevel>
-      <argument0>-c hcpsandbox.tie.local</argument0>
-      <argument1>-t tenant2</argument1>
-      <argument2>-n shineTest</argument2>
-      <argument3>-u tenant2User</argument3>
-      <argument4>-p Hitachi123</argument4>
-      <argument5>-d 100 3 10</argument5>
-      <argument6>-f 1000 4</argument6>
-      <argument7>-k 10</argument7>
-      <argument8>-o PUT result.txt</argument8>
-      <parallel>N</parallel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>176</xloc>
+      <xloc>208</xloc>
       <yloc>160</yloc>
       </entry>
     <entry>
-      <name>START</name>
+      <name>Save Results to DB</name>
       <description/>
-      <type>SPECIAL</type>
-      <start>Y</start>
-      <dummy>N</dummy>
-      <repeat>N</repeat>
-      <schedulerType>0</schedulerType>
-      <intervalSeconds>0</intervalSeconds>
-      <intervalMinutes>60</intervalMinutes>
-      <hour>12</hour>
-      <minutes>0</minutes>
-      <weekDay>1</weekDay>
-      <DayOfMonth>1</DayOfMonth>
+      <type>JOB</type>
+      <specification_method>filename</specification_method>
+      <job_object_id/>
+      <filename>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;create_result_tables.kjb</filename>
+      <jobname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Nothing</loglevel>
+      <slave_server_name/>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <expand_remote_job>N</expand_remote_job>
+      <create_parent_folder>N</create_parent_folder>
+      <pass_export>N</pass_export>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <set_append_logfile>N</set_append_logfile>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>80</xloc>
-      <yloc>160</yloc>
+      <xloc>880</xloc>
+      <yloc>64</yloc>
       </entry>
   </entries>
   <hops>
     <hop>
+      <from>shine.sh</from>
+      <to>Shine Execution Cleanup</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Shine Execution Cleanup</from>
+      <to>Wait for JVM GC Completion</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
       <from>START</from>
-      <to>shineModified.sh</to>
+      <to>Set Enviroment Variables</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>Y</unconditional>
     </hop>
+    <hop>
+      <from>Set Enviroment Variables</from>
+      <to>shine.sh</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait for JVM GC Completion</from>
+      <to>JVM Garbage Collection Check Status</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>N</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait for JVM GC Completion</from>
+      <to>Save Results to DB</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Save Results to DB</from>
+      <to>JVM Garbage Collection Check Status</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
   </hops>
   <notepads>
+    <notepad>
+      <note>Load Variables are set for &#xa;-Directory Count&#xa;-Directory Depth&#xa;-Directory Width&#xa;-File Count&#xa;-File Size &#x28;in bytes&#x29;&#xa;&#xa;We set these because they will also be used in the cleanup &#xa;operation which must make sense of the results output text file</note>
+      <xloc>80</xloc>
+      <yloc>240</yloc>
+      <width>391</width>
+      <heigth>154</heigth>
+      <fontname>.SF NS Text</fontname>
+      <fontsize>13</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
   </notepads>
 
 </job>
